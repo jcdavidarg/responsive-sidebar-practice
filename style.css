@@ -31,3 +31,24 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
 }
+
+main {
+    padding: min(3em, 7%);
+}
+
+main p {
+    color: var(--secondaty-text-clr);
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.container {
+    border: 1px solid var(--line-clr);
+    border-radius: 1em;
+    margin-bottom: 2em;
+    padding: min(3em, 15%);
+}
+
+h2, p {
+    margin-top: 1em;
+}
