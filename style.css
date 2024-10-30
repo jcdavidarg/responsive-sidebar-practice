@@ -58,7 +58,7 @@ main p {
 #sidebar {
     height: 100vh;
     width: 25rem;
-    padding: 0.5rem 1em;
+    padding: 0.5rem 3rem;
     background-color: var(--base-clr);
     border-right: 1px solid var(--line-clr);
     
@@ -106,4 +106,31 @@ main p {
     border: none;
     font: inherit;
     cursor: pointer;
+}
+
+#sidebar svg {
+    flex-shrink: 0;
+    fill: var(--text-clr);
+}
+
+#sidebar a span, #sidebar .dropdown-btn span {
+    flex-grow: 1;
+}
+
+#sidebar a:hover, #sidebar .dropdown-btn:hover {
+    background-color: var(--hover-clr);
+}
+
+#sidebar .sub-menu {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 300ms ease-in-out;
+
+    > div {
+        overflow: hidden;
+    }
+}
+
+#sidebar .sub-menu.show {
+    grid-template-rows: 1fr;
 }
